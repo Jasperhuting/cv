@@ -624,6 +624,20 @@
         </div>
 
         <div class="row">
+          <span class="left">React.js: </span>
+          <span class="middle justify-center">
+            <div class="rating">
+              <span class="filled"></span>
+              <span class="filled"></span>
+              <span class="filled"></span>
+              <span class="filled"></span>
+              <span class="filled"></span>
+            </div>
+          </span>
+          <span class="right">senior</span>
+        </div>
+
+        <div class="row">
           <span class="left">AngularJS: </span>
           <span class="middle justify-center">
             <div class="rating">
@@ -866,11 +880,8 @@
           let birthdayDate = new Date(
             `${currentYear}-${date.split("-")[1]}-${date.split("-")[2]}`
           );
-
           const tomorrow = new Date(`${currentYear}-10-08`);
-
           let difference = birthdayDate.getTime() - dateToday.getTime();
-
           if (difference < 0) {
             birthdayDate = new Date(
               `${currentYear + 1}-${date.split("-")[1]}-${date.split("-")[2]}`
@@ -880,7 +891,7 @@
           const diffInDays = Math.ceil(difference / (1000 * 3600 * 24));
           dateItem.title = `Over ${diffInDays} dagen ben ik jarig en dan word ik ${age}`;
 
-          console.log("Welkom! Leuk dat je de broncode ook even bekijkt ;)");
+          console.log("%cWelkom! Leuk dat je de broncode ook even bekijkt ;)");
         },
         false
       );
