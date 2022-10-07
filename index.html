@@ -863,13 +863,11 @@
           const age = calcAge(date);
           const currentYear = new Date().getFullYear();
           const dateToday = new Date();
-          console.log(currentYear);
           let birthdayDate = new Date(
             `${currentYear}-${date.split("-")[1]}-${date.split("-")[2]}`
           );
 
           const tomorrow = new Date(`${currentYear}-10-08`);
-          console.log(tomorrow);
 
           let difference = birthdayDate.getTime() - dateToday.getTime();
 
@@ -880,11 +878,7 @@
             difference = birthdayDate.getTime() - dateToday.getTime();
           }
           const diffInDays = Math.ceil(difference / (1000 * 3600 * 24));
-          console.log(difference);
-          console.log(diffInDays);
-          console.log(date);
           dateItem.title = `Over ${diffInDays} dagen ben ik jarig en dan word ik ${age}`;
-          console.log(birthdayDate);
         },
         false
       );
