@@ -4,8 +4,7 @@
   font-weight: 300 800;
   font-stretch: 75% 100%;
   font-display: block;
-  src: url(https://fonts.gstatic.com/s/opensans/v34/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/opensans/v34/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -69,22 +68,26 @@ section[name="aanbevelingen"] .row {
   top: 0;
   z-index: 2;
 }
+
 .cv {
   background-color: var(--primary);
   color: var(--white);
   padding: 10px;
   font-weight: 700;
 }
+
 .foto-container {
   position: fixed;
   top: 20px;
 }
+
 .foto {
   position: absolute;
   left: -80px;
   width: 70px;
   cursor: pointer;
 }
+
 .foto:hover::after {
   content: "";
   background-color: var(--primary);
@@ -96,9 +99,11 @@ section[name="aanbevelingen"] .row {
   z-index: -2;
   bottom: 4px;
 }
+
 .foto-container:hover .linkedIn {
   opacity: 0.5;
 }
+
 .linkedIn {
   background-image: url("https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg");
   background-size: contain;
@@ -122,6 +127,7 @@ section[name="aanbevelingen"] .row {
 h2 {
   font-size: 1.2em;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -137,6 +143,7 @@ h2 {
   display: flex;
   flex-direction: row;
 }
+
 .rating span {
   width: 20px;
   height: 20px;
@@ -181,38 +188,47 @@ h2 {
   display: block;
   content: "";
 }
+
 a {
   color: var(--primary);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .daysToBirthday {
   cursor: help;
 }
+
 .row {
   display: flex;
   flex-direction: row;
   padding: 2px 0 5px 0;
   position: relative;
 }
+
 .left,
 .right {
   display: block;
 }
+
 .right {
   flex: 6;
 }
+
 .left {
   flex: 4;
   text-align: right;
   font-weight: 700;
   padding-right: 20px;
 }
+
 .left.normal {
   font-weight: normal;
 }
+
 .middle {
   padding: 0 20px 0 0;
   min-width: 250px;
@@ -239,7 +255,8 @@ section h2 {
   background-size: contain;
   border-radius: 100%;
 }
-.jeremy-image {
+
+/* .jeremy-image {
   background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQHvh2Yt8q4obg/profile-displayphoto-shrink_100_100/0/1594365286628?e=1670457600&v=beta&t=DegvSquuJKLVOaa0WruAzhRJThQh71BwVwPTyvbm86E");
 }
 .lotte-image {
@@ -259,15 +276,17 @@ section h2 {
 }
 .michiel-image {
   background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQGApNzxTwYIpA/profile-displayphoto-shrink_100_100/0/1548280955937?e=1670457600&v=beta&t=Hz_Cku0t00RLpYD021oKrG6q0xUiGu5FyDhTRVezShM");
-}
+} */
 
 .center {
   text-align: center;
 }
+
 .justify-center {
   display: flex;
   justify-content: center;
 }
+
 .spacing {
   height: 20px;
   width: 100%;
@@ -280,6 +299,7 @@ section h2 {
     justify-content: center;
     display: flex;
   }
+
   .foto {
     left: 0px;
     top: 20px;
@@ -288,11 +308,13 @@ section h2 {
     height: 160px;
     display: block;
   }
+
   .linkedIn {
     position: relative;
     top: 0;
     left: 0px;
   }
+
   .foto img {
     width: 80px;
   }
@@ -305,27 +327,34 @@ section h2 {
     box-sizing: border-box;
     padding-right: 50px;
   }
+
   .empty {
     height: 0;
   }
+
   .normal {
     font-weight: 700;
     font-size: 1.4em;
   }
+
   .row {
     flex-direction: column;
   }
+
   .left {
     text-align: left;
     font-weight: 700;
   }
+
   .justify-center {
     justify-content: flex-start;
   }
+
   section[name="aanbevelingen"] .row .left,
   section[name="aanbevelingen"] .row .right {
     text-align: center;
   }
+
   section[name="aanbevelingen"] .row .middle-small {
     display: flex;
     justify-content: center;
@@ -336,6 +365,7 @@ section h2 {
     padding-bottom: 15px;
   }
 }
+
 @media (min-width: 750px) {
   section {
     width: 750px;
@@ -346,6 +376,7 @@ section h2 {
   0% {
     width: 0px;
   }
+
   10% {
     width: var(--prog);
   }
