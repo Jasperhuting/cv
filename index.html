@@ -312,7 +312,7 @@
         <span class="right">14 juni 2018, Amsterdam, Nederland</span>
       </div>
     </section>
-    <section name="kennismatrix">
+<!--     <section name="kennismatrix">
       <div class="row">
         <span class="left">
           <h2>Kennismatrix</h2>
@@ -326,7 +326,6 @@
         <span class="right">Ervaring</span>
       </div>
 
-      <!-- Design -->
       <div class="row">
         <span class="left normal">Design </span>
         <span class="middle empty"></span>
@@ -377,9 +376,7 @@
 
       <div class="spacing"></div>
 
-      <!-- Web -->
-
-      <div class="row">
+     <div class="row">
         <span class="left normal">Web </span>
         <span class="middle empty"></span>
         <span class="right empty"></span>
@@ -441,8 +438,6 @@
         <span class="right">senior</span>
       </div>
       <div class="spacing"></div>
-
-      <!-- Javascript -->
 
       <div class="row">
         <span class="left normal">Javascript </span>
@@ -577,8 +572,6 @@
       </div>
       <div class="spacing"></div>
 
-      <!-- Backend -->
-
       <div class="row">
         <span class="left normal">Backend </span>
         <span class="middle empty"></span>
@@ -614,7 +607,6 @@
       </div>
 
       <div class="spacing"></div>
-      <!-- Tools -->
 
       <div class="row">
         <span class="left normal">Tools </span>
@@ -666,8 +658,6 @@
 
       <div class="spacing"></div>
 
-      <!-- Testing frameworks -->
-
       <div class="row">
         <span class="left normal">Testing frameworks </span>
         <span class="middle"></span>
@@ -715,37 +705,13 @@
         </span>
         <span class="right">medior</span>
       </div>
-    </section>
+    </section> -->
   </div>
 
-  <script type="text/javascript">
-    function calcAge(dateString) {
-      var birthday = +new Date(dateString);
-      return ~~((Date.now() - birthday) / 31557600000) + 1;
-    }
-
+  <script type="text/javascript">    
     document.addEventListener(
       "DOMContentLoaded",
-      function () {
-        const dateItem = document.querySelector(".daysToBirthday");
-        const date = document.querySelector(".daysToBirthday").dataset.date;
-        const age = calcAge(date);
-        const currentYear = new Date().getFullYear();
-        const dateToday = new Date();
-        let birthdayDate = new Date(
-          `${currentYear}-${date.split("-")[1]}-${date.split("-")[2]}`
-        );
-        const tomorrow = new Date(`${currentYear}-10-08`);
-        let difference = birthdayDate.getTime() - dateToday.getTime();
-        if (difference < 0) {
-          birthdayDate = new Date(
-            `${currentYear + 1}-${date.split("-")[1]}-${date.split("-")[2]}`
-          );
-          difference = birthdayDate.getTime() - dateToday.getTime();
-        }
-        const diffInDays = Math.ceil(difference / (1000 * 3600 * 24));
-        dateItem.title = `Over ${diffInDays} dagen ben ik jarig en dan word ik ${age}`;
-
+      function () {       
         console.log("%cWelkom! Leuk dat je de broncode ook even bekijkt ;)");
       },
       false
